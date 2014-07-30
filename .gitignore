@@ -25,3 +25,16 @@ target
 # Play
 logs
 RUNNING_PID
+/db
+.eclipse
+/lib/
+/logs/
+/modules
+/project/project
+/project/target
+test-result
+server.pid
+*.iml
+*.eml
+/dist/
+.cache
