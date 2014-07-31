@@ -3,8 +3,7 @@
 # ~~~~
 
 # Home page
-GET        /                    controllers.Application.create
-POST        /                    controllers.Application.createData
+POST        /                    controllers.Application.create
 
 
 # Map static resources from the /public folder to the /assets URL path

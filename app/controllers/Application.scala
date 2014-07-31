@@ -14,13 +14,7 @@ object Application extends Controller with MongoController {
   import models.JsonFormats._
   import models._
 
-  def create = Action.async {
-    val data = TrackingData("1", "John", "Smith", "2", "3", "4")
-    val futureResult = collection.insert(data)
-    futureResult.map(_ => Ok)
-  }
-
-  def createData = Action.async(parse.json) {
+  def create = Action.async(parse.json) {
     request =>
       request.body.validate[TrackingData].map {
         data =>
