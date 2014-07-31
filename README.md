@@ -18,7 +18,7 @@ You can then use Postman in order to store a tracking data, set the URL to http:
 
 ```json
 {
-        "cookie_id": String 
+        "cookie_id": String,
         "email": String,
     	"session_id": String, 
     	"referer": String,
